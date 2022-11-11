@@ -26,8 +26,7 @@ class LoginFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
-        return inflater.inflate(R.layout.fragment_login, container, false)
-        return binding.root
+       return binding.root
     }
 
     override fun onStart() {
