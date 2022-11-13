@@ -49,13 +49,16 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:hint="@string/password_hint"
                 android:layout_marginTop="@dimen/small_margin"
+                app:endIconMode="password_toggle"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/login_fragment_password"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="textEmailAddress"/>
+                    android:inputType="textPassword"
+
+                    />
 
             </com.google.android.material.textfield.TextInputLayout>
 

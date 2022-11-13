@@ -13,6 +13,9 @@
         <item name="colorOnError">@color/error</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Mintic.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Mintic.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Mintic.Large</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -24,4 +27,21 @@
     <style name="Theme.4BB410.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.4BB410.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ShapeAppearance.Mintic.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">@dimen/corner_size</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.Mintic.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">@dimen/corner_size</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <style name="ShapeAppearance.Mintic.Large" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerSize">@dimen/corner_size</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+
 </resources>
