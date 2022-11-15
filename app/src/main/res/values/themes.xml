@@ -16,6 +16,7 @@
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Mintic.Small</item>
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Mintic.Medium</item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Mintic.Large</item>
+        <item name="textAppearanceButton">@style/Theme.4BB410.TextAppearanceButtom</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -43,5 +44,15 @@
         <item name="cornerFamily">rounded</item>
     </style>
 
+    <style name="Theme.4BB410.TextAppearanceButtom" parent="Widget.MaterialComponents.Button">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">@dimen/text_buttom_size</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    
+    <style name="Theme.4BB410.Body1" parent="TextAppearance.MaterialComponents.Body1">
+    <item name="fontFamily">@font/lato</item>
+    <item name="android:textSize">@dimen/text_buttom_size</item>
+    </style>
 
 </resources>

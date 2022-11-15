@@ -5,4 +5,5 @@
     <dimen name="card_elevation">8dp</dimen>
     <dimen name="small_margin">8dp</dimen>
     <dimen name="corner_size">16dp</dimen>
+    <dimen name="text_buttom_size">12sp</dimen>
 </resources>
