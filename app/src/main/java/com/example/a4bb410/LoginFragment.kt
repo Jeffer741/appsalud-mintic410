@@ -38,6 +38,19 @@ class LoginFragment : Fragment() {
         binding.fragmentLoginLabel2.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
         }
+        binding.loginFragmentLoginButtom?.setOnClickListener {
+            if (!binding.loginFragmentEmail.text.toString().isValidEmail()){
+                binding.loginFragmentEmailLayout.error = "Correo electronico incorrecto"
+            } else {
+                binding.loginFragmentEmailLayout.error = null
+            }
+
+            if (!binding.loginFragmentPassword.text.toString().isValidPassword()){
+                binding.loginFragmentPasswordLayout.error = "Contraseña incorrecta"
+            } else {
+                binding.loginFragmentPasswordLayout.error = null
+            }
+        }
     }
 
 
