@@ -40,13 +40,13 @@ class LoginFragment : Fragment() {
         }
         binding.loginFragmentLoginButtom?.setOnClickListener {
             if (!binding.loginFragmentEmail.text.toString().isValidEmail()){
-                binding.loginFragmentEmailLayout.error = "Correo electronico incorrecto"
+                binding.loginFragmentEmailLayout.error = getString(R.string.email_error)
             } else {
                 binding.loginFragmentEmailLayout.error = null
             }
 
             if (!binding.loginFragmentPassword.text.toString().isValidPassword()){
-                binding.loginFragmentPasswordLayout.error = "Contraseña incorrecta"
+                binding.loginFragmentPasswordLayout.error = getString(R.string.password_error)
             } else {
                 binding.loginFragmentPasswordLayout.error = null
             }
