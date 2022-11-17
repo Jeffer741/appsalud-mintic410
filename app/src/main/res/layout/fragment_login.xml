@@ -102,7 +102,7 @@
         app:layout_constraintEnd_toStartOf="@id/fragment_login_label2"
         app:layout_constraintHorizontal_chainStyle="packed"
         android:layout_marginEnd="@dimen/small_margin"
-        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginBottom="@dimen/default_margin"
         android:textAppearance="@style/Theme.4BB410.Body1"
         />
 

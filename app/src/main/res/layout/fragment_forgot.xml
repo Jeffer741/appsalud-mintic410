@@ -7,16 +7,16 @@
     tools:context=".ForgotFragment">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/login_fragment_card"
+        android:id="@+id/forgot_fragment_card"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/login_fragment_login_buttom"
+        app:layout_constraintBottom_toTopOf="@id/forgot_fragment_login_buttom"
         android:layout_marginHorizontal="@dimen/default_margin"
         app:cardElevation="@dimen/card_elevation"
-        app:layout_constraintVertical_chainStyle="spread_inside">
+        app:layout_constraintVertical_chainStyle="spread">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -24,7 +24,7 @@
             android:layout_margin="@dimen/default_margin">
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/login_fragment_email_layout"
+                android:id="@+id/forgot_fragment_email_layout"
                 app:layout_constraintTop_toTopOf="parent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
                 android:hint="@string/email_hint">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/login_fragment_email"
+                    android:id="@+id/forgot_fragment_email"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="textEmailAddress"/>
@@ -47,42 +47,43 @@
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/login_fragment_login_buttom"
+        android:id="@+id/forgot_fragment_login_buttom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/default_margin"
         android:fontFamily="@font/lato_bold"
-        android:text="@string/login_label"
+        android:text="@string/forgot_button_label"
         app:backgroundTint="@color/primary"
-        app:layout_constraintBottom_toTopOf="@id/fragment_login_label1"
+        app:layout_constraintBottom_toTopOf="@id/fragment_forgot_label1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_fragment_card" />
+        app:layout_constraintTop_toBottomOf="@+id/forgot_fragment_card" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/fragment_login_label1"
+        android:id="@+id/fragment_forgot_label1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/label1"
-        app:layout_constraintTop_toBottomOf="@id/login_fragment_login_buttom"
+        app:layout_constraintTop_toBottomOf="@id/forgot_fragment_login_buttom"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:textColor="#3C4048"
-        app:layout_constraintEnd_toStartOf="@id/fragment_login_label2"
+        app:layout_constraintEnd_toStartOf="@id/fragment_forgot_label2"
         app:layout_constraintHorizontal_chainStyle="packed"
         android:layout_marginEnd="@dimen/small_margin"
         android:layout_marginBottom="@dimen/small_margin"
         android:textAppearance="@style/Theme.4BB410.Body1"
+        android:layout_marginTop="@dimen/default_margin"
         />
 
     <com.google.android.material.textview.MaterialTextView
-        app:layout_constraintStart_toEndOf="@id/fragment_login_label1"
-        android:id="@+id/fragment_login_label2"
+        app:layout_constraintStart_toEndOf="@id/fragment_forgot_label1"
+        android:id="@+id/fragment_forgot_label2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fragment_login_label1"
-        app:layout_constraintBottom_toBottomOf="@id/fragment_login_label1"
+        app:layout_constraintTop_toTopOf="@+id/fragment_forgot_label1"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_forgot_label1"
         android:text="@string/label2"
         android:layout_marginStart="8dp"
         android:textColor="@color/primary"

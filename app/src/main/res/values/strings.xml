@@ -18,5 +18,6 @@
     <string name="label2">Suscribirse</string>
     <string name="email_error">Correo invalido</string>
     <string name="password_error">Contraseña invalida</string>
+    <string name="forgot_button_label">Cambiar mi contraseña</string>
 
 </resources>
