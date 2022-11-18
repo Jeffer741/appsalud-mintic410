@@ -22,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
         binding.activityHomeToolbarImage.setOnClickListener {
             Log.d( "HOLA", "HOLA")
 
-        }    
+        }
     }
 
 }
