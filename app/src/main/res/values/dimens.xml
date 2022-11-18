@@ -6,4 +6,6 @@
     <dimen name="small_margin">8dp</dimen>
     <dimen name="corner_size">16dp</dimen>
     <dimen name="text_buttom_size">12sp</dimen>
+    <dimen name="toolbar_icon_size">120dp</dimen>
+    <dimen name="toolbar_icon_size_heigh">48dp</dimen>
 </resources>
