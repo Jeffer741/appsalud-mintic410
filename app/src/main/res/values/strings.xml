@@ -23,5 +23,7 @@
     <string name="label3">Tengo una cuenta</string>
     <string name="label4">Iniciar sesión</string>
     <string name="male_label">Masculino</string>
+    <string name="female_label">Femenino</string>
+    <string name="other_label">Otro</string>
 
 </resources>

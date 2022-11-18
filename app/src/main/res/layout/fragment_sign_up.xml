@@ -88,7 +88,7 @@
 
             <RadioGroup
                 android:id="@+id/fragment_signup_radio_group"
-                android:layout_width="8dp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/signup_fragment_name_layout"
                 app:layout_constraintStart_toStartOf="parent"
@@ -96,6 +96,27 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginTop="@dimen/small_margin"
                 android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/fragment_signup_male"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/male_label"/>
+
+                <RadioButton
+                    android:id="@+id/fragment_signup_female"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/female_label"/>
+
+                <RadioButton
+                    android:id="@+id/fragment_signup_other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/other_label"/>
 
 
 
