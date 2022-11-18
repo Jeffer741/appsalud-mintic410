@@ -19,5 +19,9 @@
     <string name="email_error">Correo invalido</string>
     <string name="password_error">Contraseña invalida</string>
     <string name="forgot_button_label">Cambiar mi contraseña</string>
+    <string name="name_label">Ingrese su nombre</string>
+    <string name="label3">Tengo una cuenta</string>
+    <string name="label4">Iniciar sesión</string>
+    <string name="male_label">Masculino</string>
 
 </resources>
