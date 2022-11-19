@@ -17,6 +17,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Mintic.Medium</item>
         <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Mintic.Large</item>
         <item name="textAppearanceButton">@style/Theme.4BB410.TextAppearanceButtom</item>
+        <item name="colorControlNormal">@color/white</item>
         <!-- Customize your theme here. -->
     </style>
 

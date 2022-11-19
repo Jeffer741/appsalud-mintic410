@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.example.a4bb410.databinding.ActivityHomeBinding
 
@@ -27,8 +28,14 @@ class HomeActivity : AppCompatActivity() {
         }
 
         val navController = findNavController(R.id.nav_host_home_fragment)
+        val appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.homeFragment,
+            R.id.locationFragment,
+            R.id.specialistFragment,
+            R.id.profileFragment
+        ))
         binding.activityHomeBottomNavigation.setupWithNavController(navController)
-        binding.activityHomeToolbar.setupWithNavController(navController)
+        binding.activityHomeToolbar.setupWithNavController(navController, appBarConfiguration)
 
     }
 
