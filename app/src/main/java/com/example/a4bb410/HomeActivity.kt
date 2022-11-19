@@ -3,6 +3,8 @@ package com.example.a4bb410
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.a4bb410.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -23,6 +25,11 @@ class HomeActivity : AppCompatActivity() {
             Log.d( "HOLA", "HOLA")
 
         }
+
+        val navController = findNavController(R.id.nav_host_home_fragment)
+        binding.activityHomeBottomNavigation.setupWithNavController(navController)
+        binding.activityHomeToolbar.setupWithNavController(navController)
+
     }
 
 }

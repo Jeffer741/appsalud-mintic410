@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/home_nav">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.a4bb410.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.a4bb410.LocationFragment"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.a4bb410.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/specialistFragment"
+        android:name="com.example.a4bb410.SpecialistFragment"
+        tools:layout="@layout/fragment_specialist" />
 </navigation>
