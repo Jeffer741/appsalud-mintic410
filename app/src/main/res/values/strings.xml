@@ -29,5 +29,7 @@
     <string name="location_label">Localización</string>
     <string name="specialist_label">Especialistas</string>
     <string name="profile_label">Perfil</string>
+    <string name="home_title">Cambia tu vida para mejor</string>
+    <string name="home_subtitle">Agenda una cita y te ayudaremos con el problema al que te enfrentas.</string>
 
 </resources>
