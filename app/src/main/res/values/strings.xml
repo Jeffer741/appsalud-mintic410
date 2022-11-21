@@ -31,5 +31,6 @@
     <string name="profile_label">Perfil</string>
     <string name="home_title">Cambia tu vida para mejor</string>
     <string name="home_subtitle">Agenda una cita y te ayudaremos con el problema al que te enfrentas.</string>
+    <string name="home_recycler_title">Nuestros servicios</string>
 
 </resources>
