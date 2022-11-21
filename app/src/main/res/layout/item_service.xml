@@ -10,7 +10,6 @@
         app:layout_constraintTop_toTopOf="@id/item_service_title"
         app:layout_constraintBottom_toBottomOf="@id/item_service_description"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginVertical="@dimen/default_margin"
         android:layout_marginStart="@dimen/default_margin"
         android:layout_width="@dimen/service_icon_size"
         android:layout_height="@dimen/service_icon_size"
@@ -37,12 +36,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="@dimen/default_margin"
         app:layout_constraintTop_toBottomOf="@id/item_service_title"
-        android:layout_marginTop="@dimen/small_margin"
         tools:text="Los mejores especialistas en medicina general."
         android:textAppearance="@style/Theme.4BB410.Body1"
         />
     
     <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/item_service_divider"
         app:layout_constraintTop_toBottomOf="@id/item_service_description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
