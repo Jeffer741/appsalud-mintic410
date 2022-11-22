@@ -32,5 +32,7 @@
     <string name="home_title">Cambia tu vida para mejor</string>
     <string name="home_subtitle">Agenda una cita y te ayudaremos con el problema al que te enfrentas.</string>
     <string name="home_recycler_title">Nuestros servicios</string>
+    <string name="specilist_title">Nuestras especialidades</string>
+    <string name="specilist_subtitle">agenda una cita con una especialidad de tu preferencia</string>
 
 </resources>
