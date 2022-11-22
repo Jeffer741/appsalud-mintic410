@@ -92,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="@dimen/small_margin"
-        tools:listitem="@layout/item_service"
+        tools:listitem="@layout/item_doctor"
         tools:itemCount="2"/>
 
 

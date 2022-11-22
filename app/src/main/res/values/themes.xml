@@ -52,9 +52,16 @@
     </style>
     
     <style name="Theme.4BB410.Body1" parent="TextAppearance.MaterialComponents.Body1">
-    <item name="fontFamily">@font/lato</item>
-    <item name="android:textSize">@dimen/text_buttom_size</item>
+        <item name="fontFamily">@font/lato</item>
+        <item name="android:textSize">@dimen/text_buttom_size</item>
     </style>
+
+    <style name="Theme.4BB410.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/lato</item>
+
+    </style>
+
+    Theme.4BB410.Caption
 
     <style name="Theme.4BB410.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
         <item name="fontFamily">@font/lato_bold</item>
