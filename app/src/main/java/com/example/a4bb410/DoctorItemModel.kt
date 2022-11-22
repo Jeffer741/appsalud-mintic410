@@ -1,4 +1,14 @@
 package com.example.a4bb410
 
-class DoctorItemModel {
-}
+data class DoctorItemModel(
+    val id: String,
+    val name: String,
+    val specility: String,
+    val image: String,
+    val star: Int,
+    val description: String
+
+
+
+
+    )
