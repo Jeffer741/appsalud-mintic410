@@ -48,7 +48,7 @@
         app:layout_constraintStart_toEndOf="@id/item_doctor_image"
         android:numStars="1"
         android:rating="1"
-        android:Isindicator="true"
+        android:isIndicator="true"
         style="?android:attr/ratingBarStyleSmall"
         app:layout_constraintTop_toBottomOf="@id/item_doctor_name"
         android:layout_marginStart="16dp"

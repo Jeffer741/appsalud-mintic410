@@ -39,7 +39,7 @@ class HomeFragment : Fragment() {
             R.drawable.ico_general.toString()
             ),
 
-            ServiceItemModel("2", "Especilista", "Los mejores medicos especialistas",
+            ServiceItemModel("2", "Especialista", "Los mejores medicos especialistas",
                 R.drawable.ico_especialidad.toString()
             ),
 
