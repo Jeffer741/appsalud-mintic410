@@ -33,7 +33,7 @@ class DoctorAdapter(var list: List<DoctorItemModel>):RecyclerView.Adapter<Doctor
         return list.size
     }
 
-    fun updateDataSet(list: List<DoctorItemModel>){
+    fun updateDataSet(list: List<DoctorItemModel>) {
         this.list = list
         notifyDataSetChanged()
     }

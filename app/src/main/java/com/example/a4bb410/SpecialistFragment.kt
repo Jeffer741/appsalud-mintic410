@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,6 +25,7 @@ class SpecialistFragment : Fragment() {
     private val binding: FragmentSpecialistBinding get() = _binding!!
     private val args: SpecialistFragmentArgs by navArgs()
     private lateinit var doctorAdapter: DoctorAdapter
+    private lateinit var categories: MutableList<String>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,7 +43,33 @@ class SpecialistFragment : Fragment() {
             adapter = doctorAdapter
             layoutManager = LinearLayoutManager(requireContext())
         }
-        val specilist = listOf(
+
+        val services = listOf(
+
+            ServiceItemModel("1", "General", "Los mejores especialistas en medicina general",
+                R.drawable.ico_general.toString()
+            ),
+
+            ServiceItemModel("2", "Especialista", "Los mejores medicos especialistas",
+                R.drawable.ico_especialidad.toString()
+            ),
+
+            ServiceItemModel("3", "Odontología", "Los mejores especialistas en odontología",
+                R.drawable.ico_odontologia.toString()
+            ),
+
+            ServiceItemModel("4", "Dermatología", "Los mejores especialistas en dermatología",
+                R.drawable.ico_dermatologia.toString()
+            ),
+
+            ServiceItemModel("5", "Pediatria", "Los mejores especialistas en pediatría",
+                R.drawable.ico_pediatria.toString()
+            )
+        )
+
+        categories = services.map { it.title }.toMutableList()
+        categories.add(0,"Todos")
+        val specialists = listOf(
             DoctorItemModel("1", "Dr Andres Gutierrez", "Especialista", "350+pacientes",
                 R.drawable.doc1.toString(), 5, "lorem Ipsum is simply dummy text of the printing and typesetting industry."),
             DoctorItemModel("2", "Dr María Gutierrez", "Odontología", "100+pacientes",
@@ -65,13 +93,23 @@ class SpecialistFragment : Fragment() {
            binding.specialistFragmentRecyclerTitle.visibility = View.GONE
            binding.specialistFragmentTitle.text = getString(R.string.specilist_title)
            binding.specialistFragmentSubtitle.text = getString(R.string.specilist_subtitle)
-           doctorAdapter.updateDataSet(specilist)
+           doctorAdapter.updateDataSet(specialists)
+           binding.specialistFragmentRecyclerSearch.setAdapter(ArrayAdapter(requireContext(), android.R.layout.simple_dropdown_item_1line,categories))
+           binding.specialistFragmentRecyclerSearch.setOnItemClickListener { parent, view, position, id ->
+               if (position == 0){
+                   doctorAdapter.updateDataSet(specialists)
+               }else{
+                   val category = categories[position]
+                   doctorAdapter.updateDataSet(specialists.filter { it -> it.speciality == category})
+               }
+           }
+           
        } else {
            binding.specialistFragmentRecyclerSearchLayout.visibility = View.GONE
            binding.specialistFragmentRecyclerTitle.visibility = View.VISIBLE
            binding.specialistFragmentTitle.text = args.name
            binding.specialistFragmentSubtitle.text = args.description
-           doctorAdapter.updateDataSet(specilist.filter { it -> it.speciality == args.name })
+           doctorAdapter.updateDataSet(specialists.filter { it -> it.speciality == args.name })
        }
     }
 
