@@ -45,6 +45,12 @@
         <item name="cornerFamily">rounded</item>
     </style>
 
+    <style name="cutImage" parent="">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">cut</item>
+
+    </style>
+
     <style name="Theme.4BB410.TextAppearanceButtom" parent="Widget.MaterialComponents.Button">
         <item name="fontFamily">@font/lato_bold</item>
         <item name="android:textSize">@dimen/text_buttom_size</item>

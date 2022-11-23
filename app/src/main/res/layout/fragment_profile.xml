@@ -4,16 +4,75 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileFragment">
+    tools:context=".ProfileFragment"
+    android:background="@drawable/fondologin">
 
     <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_fragment_image"
         android:layout_width="@dimen/icon_size"
         android:layout_height="@dimen/icon_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="@dimen/default_margin"
+        app:shapeAppearanceOverlay="@style/cutImage"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="2dp"
         app:srcCompat="@drawable/doc1"
         android:scaleType="fitXY"/>
+    
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/profile_fragment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profile_fragment_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textAppearance="@style/Theme.4BB410.Body1"
+        tools:text="Andres Gutierrez"
+        android:textColor="@color/primary"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/profile_fragment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profile_fragment_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textAppearance="@style/Theme.4BB410.Body1"
+        tools:text="Andres Gutierrez"
+        android:textColor="@color/primary"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/profile_fragment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profile_fragment_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textAppearance="@style/Theme.4BB410.Body1"
+        tools:text="Andres Gutierrez"
+        android:textColor="@color/primary"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/profile_fragment_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profile_fragment_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/small_margin"
+        android:textAppearance="@style/Theme.4BB410.Body1"
+        tools:text="Agutierrez@unal.edu.co"
+        android:textColor="@color/primary"
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
