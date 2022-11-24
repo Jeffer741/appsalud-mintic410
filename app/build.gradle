@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'androidx.navigation.safeargs'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
@@ -47,6 +48,9 @@ dependencies {
 
     //FOT LOTTIE
     implementation 'com.airbnb.android:lottie:5.2.0'
+
+    //For maps
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
