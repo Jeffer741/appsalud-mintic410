@@ -10,4 +10,5 @@
     <dimen name="toolbar_icon_size">120dp</dimen>
     <dimen name="toolbar_icon_size_heigh">48dp</dimen>
     <dimen name="service_icon_size">55dp</dimen>
+    <dimen name="stroke_size">2dp</dimen>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.a4bb410
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +26,15 @@ class ProfileFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentProfileBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onStart() {
+        super.onStart()
+        binding.profileFragmentLogOut.setOnClickListener {
+            val intent = Intent(requireContext(), LoginActivity::class.java)
+            startActivity(intent)
+            requireActivity().finish()
+        }
     }
 
 

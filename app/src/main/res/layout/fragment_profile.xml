@@ -17,7 +17,7 @@
         android:layout_marginTop="@dimen/default_margin"
         app:shapeAppearanceOverlay="@style/cutImage"
         app:strokeColor="@color/primary"
-        app:strokeWidth="2dp"
+        app:strokeWidth="@dimen/stroke_size"
         app:srcCompat="@drawable/doc1"
         android:scaleType="fitXY"/>
 
@@ -32,6 +32,7 @@
         android:textAppearance="@style/Theme.4BB410.Body1"
         tools:text="Andres Gutierrez"
         android:textColor="@color/primary"
+        android:fontFamily="@font/lato_bold"
         />
 
     
