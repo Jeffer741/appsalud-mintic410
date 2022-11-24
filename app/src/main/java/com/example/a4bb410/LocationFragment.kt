@@ -48,7 +48,7 @@ class LocationFragment : Fragment(), OnMapReadyCallback {
         mMap.mapType = GoogleMap.MAP_TYPE_SATELLITE
         val latLng = LatLng(4.586025459049243, -74.13317044232754)
         map.addMarker(MarkerOptions().position(latLng).title(R.string.app_name.toString()))
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(, zoom 14.0f))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom( latLng,17.0f))
 
 
     }
