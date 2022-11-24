@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.a4bb410.databinding.FragmentLocationBinding
+import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
@@ -47,6 +48,9 @@ class LocationFragment : Fragment(), OnMapReadyCallback {
         mMap.mapType = GoogleMap.MAP_TYPE_SATELLITE
         val latLng = LatLng(4.586025459049243, -74.13317044232754)
         map.addMarker(MarkerOptions().position(latLng).title(R.string.app_name.toString()))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(, zoom 14.0f))
+
+
     }
 
 
