@@ -39,6 +39,9 @@ class LocationFragment : Fragment(), OnMapReadyCallback {
 
     override fun onMapReady(map: GoogleMap) {
         mMap = map
+        mMap.uiSettings.isCompassEnabled = true
+        mMap.uiSettings.isZoomControlsEnabled = true
+        //mMap.uiSettings.
     }
 
 
