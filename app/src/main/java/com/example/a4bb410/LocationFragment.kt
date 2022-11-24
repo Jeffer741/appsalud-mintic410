@@ -9,6 +9,8 @@ import com.example.a4bb410.databinding.FragmentLocationBinding
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 
 
 /**
@@ -41,7 +43,10 @@ class LocationFragment : Fragment(), OnMapReadyCallback {
         mMap = map
         mMap.uiSettings.isCompassEnabled = true
         mMap.uiSettings.isZoomControlsEnabled = true
-        //mMap.uiSettings.
+        mMap.isTrafficEnabled = true
+        mMap.mapType = GoogleMap.MAP_TYPE_SATELLITE
+        val latLng = LatLng(4.586025459049243, -74.13317044232754)
+        map.addMarker(MarkerOptions().position(latLng).title(R.string.app_name.toString()))
     }
 
 
