@@ -1,12 +1,19 @@
 package com.example.a4bb410
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
 import android.os.Bundle
+import android.provider.MediaStore
+import android.provider.MediaStore.Audio.Media
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.a4bb410.databinding.FragmentProfileBinding
+import java.util.jar.Manifest
 
 
 /**
@@ -35,7 +42,40 @@ class ProfileFragment : Fragment() {
             startActivity(intent)
             requireActivity().finish()
         }
+
+        binding.profileFragmentImage.setOnClickListener{
+            if(checkPermission(android.Manifest.permission.CAMERA, CAMERA_PERMISSION_CODE)) {
+                openCamera()
+            }
+        }
     }
 
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == CAMERA_PERMISSION_CODE && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            openCamera()
+        }
+    }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == REQUEST_IMAGE_CODE) {
+            val extras = data!!.extras
+            val image = extras!!["data"] as Bitmap?
+            binding.profileFragmentImage.setImageBitmap(image)
+        }
+    }
+
+    private fun openCamera() {
+        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        try {
+            startActivityForResult(intent, REQUEST_IMAGE_CODE)
+        }catch (e: ActivityNotFoundException) {
+            Log.d("HOLA",e.message.toString())
+        }
+    }
 }
